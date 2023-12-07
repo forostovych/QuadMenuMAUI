@@ -14,7 +14,6 @@
             <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="5">
 
                 <Label Text="Menu Gallery Page" TextColor="White" />
-                <Label Text="Menu Gallery Page" TextColor="White"/>
 
             </StackLayout>
 
@@ -33,6 +32,16 @@
             </StackLayout>
 
             <StackLayout VerticalOptions="Start" Grid.Row="1">
+                <CollectionView Grid.Row="1" ItemsSource="{Binding ImageSource}" ItemsLayout="HorizontalList">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame HeightRequest="220" Padding="0" Margin="10">
+                                <Image Source="{Binding}" Aspect="AspectFill" />
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
                 <CollectionView Grid.Row="1" ItemsSource="{Binding ImageSource}" ItemsLayout="HorizontalList">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
