@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuadMenuMAUI.Views.Menu.MenuProperties.MenuPropertiesPage"
+             Title="MenuPropertiesPage" BackgroundColor="Black"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False">
+
+    <Grid RowDefinitions="0.09*, *, 90" Padding="0" Margin="0">
+
+        <Grid Grid.Row="0" BackgroundColor="Grey" Padding="0">
+
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
+                <Label Text="MenuPropertiesPage" />
+
+            </StackLayout>
+
+        </Grid>
+
+        <Grid Grid.Row="1" BackgroundColor="Blue" Padding="0">
+
+        </Grid>
+
+        <!--====== [Menu]-->
+        <Grid Grid.Row="2" Padding="0">
+            <ContentView x:Name="Menu" Content="{Binding Menu}"/>
+        </Grid>
+
+    </Grid>
+
+</ContentPage>
