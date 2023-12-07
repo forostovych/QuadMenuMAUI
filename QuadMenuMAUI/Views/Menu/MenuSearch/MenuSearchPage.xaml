@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:menuView="clr-namespace:QuadMenuMAUI.Views.Menu;assembly=QuadMenuMAUI"
              x:Class="QuadMenuMAUI.Views.Menu.MenuSearch.MenuSearchPage"
              Title="MenuSearchPage" BackgroundColor="Black"
              Shell.NavBarIsVisible="False"
@@ -24,7 +24,8 @@
 
         <!--====== [Menu]-->
         <Grid Grid.Row="2" Padding="0">
-            <ContentView x:Name="Menu" Content="{Binding Menu}"/>
+            <!-- Создание экземпляра MenuBlurView напрямую -->
+            <!--<menuView:MenuBlurView ViewModel="{Binding MenuViewModel}"/>-->
         </Grid>
 
     </Grid>

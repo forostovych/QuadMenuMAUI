@@ -6,12 +6,10 @@ namespace QuadMenuMAUI.Models.ViewModels.MenuViewModels;
 
 public partial class MenuHomePageViewModel : ObservableObject
 {
-    [ObservableProperty]
-    ContentView menu;
 
     public MenuHomePageViewModel(string muneName)
     {
         var menuViewModel = new MenuBlurViewViewModel(muneName);
-        menu = new MenuBlurView(menuViewModel);
+        //menu = new MenuBlurView(menuViewModel);
     }
 }

@@ -5,17 +5,10 @@ namespace Interrio.Models.ViewModels;
 
 public partial class MenuBlurViewViewModel : ObservableObject
 {
-    [ObservableProperty]
-    bool isHomeSelected;
-
-    [ObservableProperty]
-    bool isGallerySelected;
-
-    [ObservableProperty]
-    bool isSearchSelected;
-
-    [ObservableProperty]
-    bool isPropertiesSelected;
+    public bool IsHomeSelected { get; private set; }
+    public bool IsGallerySelected { get; private set; }
+    public bool IsSearchSelected { get; private set; }
+    public bool IsPropertiesSelected { get; private set; }
 
     public event Action<string> ButtonClickedEvent;
     public MenuBlurViewViewModel(string menuName)

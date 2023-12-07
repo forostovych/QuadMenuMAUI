@@ -9,6 +9,6 @@ public partial class MenuPropertiesPage : ContentPage
 	{
         this.viewModel = viewModel;
         InitializeComponent();
-        BindingContext = this.viewModel;
+        //BindingContext = this.viewModel;
     }
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:menuView="clr-namespace:QuadMenuMAUI.Views.Menu;assembly=QuadMenuMAUI"
              x:Class="QuadMenuMAUI.Views.Menu.MenuGallery.MenuGalleryPage"
              Title="MenuGalleryPage" BackgroundColor="Black"
              Shell.NavBarIsVisible="False"
@@ -8,15 +9,12 @@
 
     <Grid RowDefinitions="0.12*, *, 90" Padding="0" Margin="0">
 
-
         <Grid Grid.Row="0" BackgroundColor="Transparent" Padding="0">
-
             <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="5">
 
                 <Label Text="Menu Gallery Page" TextColor="White" />
 
             </StackLayout>
-
         </Grid>
 
         <StackLayout Grid.Row="2" Grid.RowSpan="2" BackgroundColor="Transparent">
@@ -59,7 +57,7 @@
         <!--====== [Menu]-->
         <Grid Grid.Row="2" Padding="0">
             <Rectangle x:Name="RECT_Blur" HeightRequest="90" Margin="0" BackgroundColor="Black" Opacity="0.7"/>
-            <ContentView x:Name="Menu" Content="{Binding Menu}"/>
+            <!--<ContentView x:Name="Menu" ViewModel="{Binding MenuViewModel}"/>-->
         </Grid>
 
     </Grid>

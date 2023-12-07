@@ -11,6 +11,8 @@ public partial class MenuHomePage : ContentPage
 	{
         this.viewModel = viewModel;
         InitializeComponent();
-        BindingContext = this.viewModel;
+
+        var menuBlurView = new MenuBlurView(new Interrio.Models.ViewModels.MenuBlurViewViewModel("BTN_Home"));
+        FRAME_CONTEINER.Content = menuBlurView;
     }
 }

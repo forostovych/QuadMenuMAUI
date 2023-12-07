@@ -7,8 +7,6 @@ namespace QuadMenuMAUI.Models.ViewModels.MenuViewModels;
 
 public partial class MenuGalleryPageViewModel : ObservableObject
 {
-    [ObservableProperty]
-    ContentView menu;
 
     [ObservableProperty]
     ObservableCollection<ImageSource> imageSource;
@@ -16,6 +14,6 @@ public partial class MenuGalleryPageViewModel : ObservableObject
     public MenuGalleryPageViewModel(string menuName)
     {
         var menuViewModel = new MenuBlurViewViewModel(menuName);
-        menu = new MenuBlurView(menuViewModel);
+        //menu = new MenuBlurView(menuViewModel);
     }
 }
